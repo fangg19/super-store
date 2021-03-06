@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  flex-direction: row;
+  background-color: #17575f;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  color: white;
+}
+
+.navlinks {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  margin: 0px 20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.selected {
+  color: orange;
+  text-decoration: underline;
+}
