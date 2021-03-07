@@ -1,5 +1,5 @@
 import React from 'react';
-import { NavLink, BrowserRouter as Router } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import classes from './Navbar.module.css';
 import Button from './Button';
 

@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import classes from './Items.module.css';
 import axios from 'axios';
 import Card from '../components/UI/Card';
 
@@ -18,7 +19,7 @@ const Items = () => {
   }, []);
 
   return (
-    <div>
+    <div className={classes.Items}>
       {items.map((item) => {
         return (
           <Card

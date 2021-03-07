@@ -1,0 +1,5 @@
+.Items {
+  display: grid;
+  justify-content: space-around;
+  flex-direction: row;
+}
