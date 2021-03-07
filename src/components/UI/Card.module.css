@@ -1,0 +1,28 @@
+.Card {
+  display: grid;
+  border: 1px solid rgb(71, 71, 71);
+
+  max-width: 300px;
+  padding: 30px;
+  margin: 100px;
+}
+
+.OnSale {
+  background-color: rgb(204, 5, 5);
+  color: white;
+  max-width: 50px;
+  padding: 5px;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 0.7rem;
+}
+
+img {
+  max-width: 300px;
+}
+
+Button {
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+}
