@@ -1,5 +1,13 @@
 .Items {
   display: grid;
-  justify-content: space-around;
-  flex-direction: row;
+  padding: 100px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .Items {
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
 }

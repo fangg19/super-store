@@ -1,10 +1,11 @@
 .Card {
   display: grid;
-  border: 1px solid rgb(71, 71, 71);
-
+  border: 1px solid rgb(180, 180, 180);
+  border-radius: 3px;
   max-width: 300px;
+  max-height: 300px;
   padding: 30px;
-  margin: 100px;
+  /* margin: 100px; */
 }
 
 .OnSale {
@@ -18,11 +19,19 @@
 }
 
 img {
-  max-width: 300px;
+  max-width: 70%;
+  max-height: 70%;
+  object-fit: contain;
 }
 
 Button {
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+  .Card {
+    margin: 20px;
+  }
 }

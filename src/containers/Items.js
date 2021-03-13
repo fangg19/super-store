@@ -5,6 +5,7 @@ import Card from '../components/UI/Card';
 
 const Items = () => {
   const [items, setItems] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function fetchData() {
@@ -13,6 +14,7 @@ const Items = () => {
       );
       console.log(res.data.items);
       setItems(res.data.items);
+      setLoading(false);
     }
 
     fetchData();
@@ -20,18 +22,22 @@ const Items = () => {
 
   return (
     <div className={classes.Items}>
-      {items.map((item) => {
-        return (
-          <Card
-            key={item._id}
-            img={item.imageUrl}
-            title={item.name}
-            rating={item.avgRating}
-            price={`$ ${item.price}`}
-            onSale={item.isOnSale}
-          />
-        );
-      })}
+      {loading ? (
+        <h3>Please wait for the Items to load...</h3>
+      ) : (
+        items.map((item) => {
+          return (
+            <Card
+              key={item._id}
+              img={item.imageUrl}
+              title={item.name}
+              rating={item.avgRating}
+              price={`$ ${item.price}`}
+              onSale={item.isOnSale}
+            />
+          );
+        })
+      )}
     </div>
   );
 };

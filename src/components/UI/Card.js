@@ -24,7 +24,7 @@ Card.propTypes = {
   img: PropTypes.string,
   title: PropTypes.string,
   rating: PropTypes.number,
-  price: PropTypes.number,
+  price: PropTypes.string,
   onSale: PropTypes.bool,
 };
 
