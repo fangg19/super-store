@@ -7,6 +7,7 @@ const Navbar = () => {
   return (
     <div className={classes.navbar}>
       <h1>Super Store</h1>
+
       <ul className={classes.navlinks}>
         <li>
           <NavLink to="/" exact activeClassName={classes.selected}>
