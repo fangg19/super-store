@@ -28,3 +28,32 @@ li a {
   color: orange;
   text-decoration: underline;
 }
+
+.userIcon {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    min-height: 1vh;
+  }
+  h1 {
+    font-size: 0.9rem;
+  }
+
+  li a {
+    display: none;
+  }
+
+  .userIcon {
+    display: inline;
+    font-size: 1.2rem;
+  }
+  Button {
+    display: none;
+  }
+ }
+
+ .sideMenu {
+   background-color: rgb(49, 49, 49)
+ }
