@@ -3,7 +3,7 @@ import classes from './Items.module.css';
 import axios from 'axios';
 import Card from '../components/UI/Card';
 
-const Items = () => {
+const Items = (props) => {
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
 
@@ -12,7 +12,6 @@ const Items = () => {
       const res = await axios.get(
         'https://gp-super-store-api.herokuapp.com/item/list'
       );
-      console.log(res.data.items);
       setItems(res.data.items);
       setLoading(false);
     }
@@ -23,7 +22,7 @@ const Items = () => {
   return (
     <div className={classes.Items}>
       {loading ? (
-        <h3>Please wait for the Items to load...</h3>
+        <h3>Please wait for the items to load...</h3>
       ) : (
         items.map((item) => {
           return (

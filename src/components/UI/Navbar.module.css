@@ -29,7 +29,7 @@ li a {
   text-decoration: underline;
 }
 
-.userIcon {
+.menuIcon {
   display: none;
 }
 
@@ -38,22 +38,23 @@ li a {
     min-height: 1vh;
   }
   h1 {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
   }
 
-  li a {
+  .navlinks {
     display: none;
   }
 
-  .userIcon {
+  .menuIcon {
     display: inline;
     font-size: 1.2rem;
   }
+
+   li {
+    margin: 5px;
+  }
+
   Button {
     display: none;
   }
- }
-
- .sideMenu {
-   background-color: rgb(49, 49, 49)
  }

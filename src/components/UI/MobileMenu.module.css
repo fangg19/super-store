@@ -1,0 +1,15 @@
+.MobileMenu {
+  background-color: #17575f;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 0;
+}
+
+.selected {
+  color: orange;
+  text-decoration: underline;
+}
